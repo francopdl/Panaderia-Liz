@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48139991310",
+    "project_id": "panaderia-liz",
+    "storage_bucket": "panaderia-liz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48139991310:android:65edb57d8aebad3f0cbf5f",
+        "android_client_info": {
+          "package_name": "com.example.panaderia_liz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCET_LacXPw-vlqO8WR_jlgBbOuJ6daZWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

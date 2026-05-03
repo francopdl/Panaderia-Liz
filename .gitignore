@@ -1,0 +1,49 @@
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.apk
+*.ipa
+*.app
+*.exe
+*.zip
+.pub-cache/
+pubspec.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.iml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.dSYM/
+
+# Android
+.gradle/
+.android/
+android/local.properties
+android/.gradle/
+android/build/
+
+# iOS
+ios/Pods/
+ios/Podfile.lock
+
+# Windows
+windows/flutter/ephemeral/
+
+# Web
+web/packages/
+
+# General
+*.log
+.env
+.env.local

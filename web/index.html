@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="Panadería Liz - Sistema de TPV">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Panadería Liz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Panadería Liz</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <meta name="theme-color" content="#FF7A00">
+    <script defer src="main.dart.js" type="application/javascript"></script>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto Mono, Roboto, sans-serif;
+            overflow: hidden;
+        }
+        body {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

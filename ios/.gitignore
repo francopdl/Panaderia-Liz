@@ -1,0 +1,31 @@
+# Miscellaneous
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+*sync/
+.sconsign.dblite
+.tags*
+.vscode/
+**/.dart_tool/
+**/.ios/Flutter/Flutter.podspec
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/Flutter/Flutter.framework
+**/Flutter/Flutter.framework.dSYM/
+**/Flutter/Flutter.xcframework
+**/Flutter/flutter_export_environment.sh
+**/Flutter/Flutter.podspec
+**/ServiceDefinitions.json
+**/flutter_export_environment.sh
+.symlinks/
+flutter/Flutter.framework
+flutter/Flutter.podspec
+
+# Exceptions
+!**/ios/**/default.mode1v3
+!**/ios/**/default.mode2v3
+!**/ios/**/default.perspectivev3
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
