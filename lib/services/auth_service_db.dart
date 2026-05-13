@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
 import 'package:panaderia_liz/models/index.dart';
 import 'package:panaderia_liz/services/firestore_service.dart';
 
@@ -45,6 +46,12 @@ class AuthServiceDB {
         final user = _webUsers[username];
         if (user != null && user.password == password) {
           _currentUser = user;
+          // Sign in anonymously to Firebase so Firestore rules pass
+          try {
+            if (fb_auth.FirebaseAuth.instance.currentUser == null) {
+              await fb_auth.FirebaseAuth.instance.signInAnonymously();
+            }
+          } catch (_) {}
           return _currentUser;
         }
         return null;
@@ -75,6 +82,9 @@ class AuthServiceDB {
 
   Future<void> logout() async {
     _currentUser = null;
+    try {
+      await fb_auth.FirebaseAuth.instance.signOut();
+    } catch (_) {}
   }
 
   Future<List<User>> getAllUsers() async {

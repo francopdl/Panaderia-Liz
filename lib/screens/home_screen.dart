@@ -49,16 +49,18 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> _loadStats() async {
     setState(() => _isLoading = true);
     try {
-      final salesCount = await _salesService.getSalesCount();
-      final revenue = await _salesService.getTotalSalesAmount();
-      final daySales = await _salesService.getDailyTotal();
-      final products = await _productService.getAllProducts();
+      final results = await Future.wait([
+        _salesService.getSalesCount(),
+        _salesService.getTotalSalesAmount(),
+        _salesService.getDailyTotal(),
+        _productService.getAllProducts(),
+      ]);
       if (mounted) {
         setState(() {
-          _totalSales = salesCount;
-          _totalRevenue = revenue;
-          _daySales = daySales;
-          _productCount = products.length;
+          _totalSales = results[0] as int;
+          _totalRevenue = results[1] as double;
+          _daySales = results[2] as double;
+          _productCount = (results[3] as List).length;
           _isLoading = false;
         });
       }

@@ -15,7 +15,11 @@ void main() async {
   );
 
   // Seed Firestore with initial data if empty
-  await FirestoreService().seedIfEmpty();
+  try {
+    await FirestoreService().seedIfEmpty();
+  } catch (_) {
+    // Ignore permission errors before authentication
+  }
 
   // Initialize ThemeService
   final themeService = ThemeService();

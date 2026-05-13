@@ -1,1 +1,25 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"panaderia-liz","appId":"1:48139991310:android:65edb57d8aebad3f0cbf5f","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"panaderia-liz","configurations":{"android":"1:48139991310:android:65edb57d8aebad3f0cbf5f","web":"1:48139991310:web:bab15f19e7b210420cbf5f"}}}}}}
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "panaderia-liz",
+          "appId": "1:48139991310:android:65edb57d8aebad3f0cbf5f",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "panaderia-liz",
+          "configurations": {
+            "android": "1:48139991310:android:65edb57d8aebad3f0cbf5f",
+            "web": "1:48139991310:web:bab15f19e7b210420cbf5f"
+          }
+        }
+      }
+    }
+  }
+}
